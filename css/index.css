@@ -157,3 +157,28 @@ h1 {
   padding: 1em;
   color: white;
 }
+.first-panel {
+  max-width: 45%;
+  widows: 45%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+}
+.first-panel img {
+  max-width: 100%;
+  width: 100%;
+  height: 500px;
+  padding: 20px;
+}
+.first-panel div {
+  display: flex;
+  flex-flow: column wrap;
+}
+.first-panel h1 {
+  text-align: center;
+}
+.first-panel p {
+  text-align: center;
+  max-width: 100%;
+  padding: 10px;
+}

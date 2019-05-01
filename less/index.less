@@ -57,6 +57,16 @@ html, body {
 }
 @big: 2.5rem;
 @pearly-white: white;
+.text-align-mixin {
+	text-align: center;
+	.first-panel p;
+	.first-panel h1;
+}
+.the-works {
+	font-size: @big;
+	color: @pearly-white;
+	.head-div h1;
+}
 h1 {
 	font-size: @big;
 }
@@ -65,9 +75,6 @@ h1 {
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	background-color: black;
-}
-.head-div h1 {
-	color: @pearly-white;
 }
 .head-div nav {
 	display: flex;
@@ -80,5 +87,28 @@ h1 {
 	padding: 1em;
 	color: @pearly-white;
 }
-  
+.first-panel {
+	max-width: 45%;
+	widows: 45%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-evenly;
+}
+.first-panel img {
+	max-width: 100%;
+	width: 100%;
+	height: 500px;
+	padding: 20px;
+}
+.first-panel div {
+	display: flex;
+	flex-flow: column wrap;
+}
+.first-panel p {
+	max-width: 100%;
+	padding: 10px;
+}
 
+@media(max-width: 500px) {
+
+}
