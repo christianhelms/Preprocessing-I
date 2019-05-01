@@ -134,6 +134,13 @@ html,
 body {
   height: 100%;
 }
+.h2-mixin {
+  font-size: 2rem;
+  padding: 10px;
+}
+.center-stuff {
+  text-align: center;
+}
 h1 {
   font-size: 2.5rem;
 }
@@ -142,9 +149,6 @@ h1 {
   flex-flow: row nowrap;
   justify-content: space-between;
   background-color: black;
-}
-.head-div h1 {
-  color: white;
 }
 .head-div nav {
   display: flex;
@@ -157,28 +161,62 @@ h1 {
   padding: 1em;
   color: white;
 }
+.head-div h1 {
+  color: white;
+}
 .first-panel {
-  max-width: 45%;
-  widows: 45%;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   justify-content: space-evenly;
 }
 .first-panel img {
-  max-width: 100%;
-  width: 100%;
+  max-width: 45%;
+  width: 45%;
   height: 500px;
   padding: 20px;
 }
 .first-panel div {
+  max-width: 45%;
+  widows: 45%;
   display: flex;
   flex-flow: column wrap;
-}
-.first-panel h1 {
   text-align: center;
 }
-.first-panel p {
-  text-align: center;
+.first-panel div p {
   max-width: 100%;
+  text-align: center;
   padding: 10px;
+}
+.first-panel .skills {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  border: red 1px dashed;
+  margin-left: 25%;
+}
+.first-panel .skills p {
+  text-align: center;
+}
+.middle-panel {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+.middle-panel h2 {
+  font-size: 2rem;
+  padding: 10px;
+}
+.middle-panel p {
+  font-size: 1rem;
+  border-bottom: 1px black solid;
+}
+.contact {
+  padding: 20px;
+}
+.contact h2 {
+  font-size: 2rem;
+  padding: 10px;
+}
+.contact ul {
+  padding: 20px;
 }

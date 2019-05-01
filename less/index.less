@@ -55,18 +55,18 @@ table {
 html, body {
     height: 100%;
 }
+
 @big: 2.5rem;
 @pearly-white: white;
-.text-align-mixin {
+
+.h2-mixin {
+	font-size: 2rem;
+	padding: 10px;
+}
+.center-stuff {
 	text-align: center;
-	.first-panel p;
-	.first-panel h1;
 }
-.the-works {
-	font-size: @big;
-	color: @pearly-white;
-	.head-div h1;
-}
+
 h1 {
 	font-size: @big;
 }
@@ -75,38 +75,81 @@ h1 {
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	background-color: black;
-}
-.head-div nav {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: flex-end;
-}
-.head-div a {
-	text-decoration: none;
-	display: block;
-	padding: 1em;
-	color: @pearly-white;
+
+	nav {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+	}
+	a {
+		text-decoration: none;
+		display: block;
+		padding: 1em;
+		color: @pearly-white;
+	}
+	h1 {
+		color: @pearly-white;
+	}
 }
 .first-panel {
-	max-width: 45%;
-	widows: 45%;
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: row wrap;
 	justify-content: space-evenly;
+
+	img {
+		max-width: 45%;
+		width: 45%;
+		height: 500px;
+		padding: 20px;
+	}
+	div {
+		max-width: 45%;
+		widows: 45%;
+		display: flex;
+		flex-flow: column wrap;
+		text-align: center;
+
+		 p {
+			max-width: 100%;
+			.center-stuff();
+			padding: 10px;
+		}
+	}
+	.skills {
+		display: flex;
+		flex-flow: column wrap;
+		.center-stuff();
+		border: red 1px dashed;
+		margin-left: 25%;
+
+		p {
+			text-align: center;
+		}
+	}
 }
-.first-panel img {
-	max-width: 100%;
-	width: 100%;
-	height: 500px;
-	padding: 20px;
-}
-.first-panel div {
+.middle-panel {
 	display: flex;
-	flex-flow: column wrap;
+	flex-flow: row wrap;
+	text-align: center;
+	
+	h2 {
+		.h2-mixin();
+	}
+	p {
+		font-size: 1rem;
+		border-bottom: 1px black solid;
+	}
 }
-.first-panel p {
-	max-width: 100%;
-	padding: 10px;
+.contact {
+	padding: 20px;
+
+	h2 {
+		.h2-mixin();	
+	}
+	
+	ul {
+		padding: 20px;
+	}
 }
 
 @media(max-width: 500px) {
