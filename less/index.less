@@ -52,8 +52,33 @@ table {
 * {
     box-sizing: border-box;
 }
-
 html, body {
     height: 100%;
 }
+@big: 2.5rem;
+@pearly-white: white;
+h1 {
+	font-size: @big;
+}
+.head-div {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	background-color: black;
+}
+.head-div h1 {
+	color: @pearly-white;
+}
+.head-div nav {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end;
+}
+.head-div a {
+	text-decoration: none;
+	display: block;
+	padding: 1em;
+	color: @pearly-white;
+}
+  
 
